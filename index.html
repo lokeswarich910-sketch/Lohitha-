@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #172554;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Home */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+            padding: 30px;
+        }
+
+        #home h1 {
+            font-size: 45px;
+            color: #172554;
+        }
+
+        #home h2 {
+            color: #2563eb;
+            margin: 10px 0;
+        }
+
+        #home p {
+            font-size: 18px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        .button:hover {
+            background-color: #172554;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #172554;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* About */
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project {
+            background-color: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        /* Education */
+        .education {
+            background-color: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            #home h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 45px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home">
+        <div>
+            <h1>Hello, I'm Your Name</h1>
+            <h2>BCA Data Science Student</h2>
+
+            <p>
+                I am a passionate Data Science student interested in
+                Python, Data Analysis, Artificial Intelligence and
+                Machine Learning.
+            </p>
+
+            <a href="#contact" class="button">Contact Me</a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am currently pursuing BCA in Data Science.
+                I am interested in learning programming, data analysis,
+                artificial intelligence and machine learning.
+                I enjoy solving problems using technology and building
+                useful projects.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Statistics</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Artificial Intelligence</div>
+            <div class="skill">Git & GitHub</div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Student Performance Analysis</h3>
+                <p>
+                    Analyzed student performance data using Python
+                    and created useful insights from the dataset.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Data Visualization</h3>
+                <p>
+                    Created charts and visualizations to understand
+                    patterns and trends in data.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>AI Mini Project</h3>
+                <p>
+                    A beginner-level artificial intelligence project
+                    designed to solve a real-world problem.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education">
+            <h3>BCA – Data Science</h3>
+            <p>Currently pursuing</p>
+
+            <br>
+
+            <h3>Higher Secondary Education</h3>
+            <p>Completed</p>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+            <p>📧 Email: yourname@gmail.com</p>
+            <p>📱 Phone: +91 XXXXX XXXXX</p>
+            <p>📍 Location: Andhra Pradesh, India</p>
+
+            <a href="https://github.com/" class="button">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Your Name | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
